@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Animals.css';
 class Animals extends Component {
   state = {
     animals: []
@@ -11,11 +12,10 @@ class Animals extends Component {
   }
 
   render() {
-    console.log(this.state.animals);
     return (
       <section className="animals-section">
         {this.state.animals.map(animal => (
-          <article>
+          <article className="animal-card">
             <h2>{animal.name}</h2>
             <p>They eat {animal.diet}</p>
             <p>Fun Fact! {animal.fun_fact}</p>

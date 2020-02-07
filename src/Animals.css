@@ -1,0 +1,11 @@
+.animal-card {
+  background-color: #fff;
+  border: 2px solid black;
+  padding: 1em;
+  width: 100%;
+}
+
+.animals-section {
+  padding: 2em;
+  width: 100%;
+}

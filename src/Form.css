@@ -1,4 +1,5 @@
 form {
+  background-color: #fff;
   border: 5px solid black;
   display: flex;
   flex-direction: column;
@@ -10,5 +11,20 @@ form {
 input,
 label,
 button {
-  margin: 0.25em;
+  margin: 0.2em;
+}
+
+label {
+  font-size: 1.25em;
+}
+
+input {
+  font-size: 1em;
+  height: 1.25em;
+  padding: 0.25em;
+}
+
+button {
+  background-color: gray;
+  color: #fff;
 }
