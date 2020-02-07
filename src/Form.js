@@ -15,6 +15,17 @@ class Form extends Component {
     this.setState({ [event.target.name]: event.target.value });
   };
 
+  checkInputs = () => {
+    if (
+      this.state.id &&
+      this.state.name &&
+      this.state.diet &&
+      this.state.fun_fact
+    ) {
+      this.getNewAnimal();
+    }
+  };
+
   getNewAnimal = () => {
     const animal = {
       method: 'POST',
@@ -61,7 +72,7 @@ class Form extends Component {
           name="fun_fact"
           placeholder="Enter animal fun fact..."
         ></input>
-        <button type="button" onClick={this.getNewAnimal}>
+        <button type="button" onClick={this.checkInputs}>
           Submit
         </button>
       </form>
