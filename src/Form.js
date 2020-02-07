@@ -62,7 +62,9 @@ class Form extends Component {
           name="fun_fact"
           placeholder="Enter animal fun fact..."
         ></input>
-        <button onClick={this.getNewAnimal}>Submit</button>
+        <button type="button" onClick={this.getNewAnimal}>
+          Submit
+        </button>
       </form>
     );
   }
