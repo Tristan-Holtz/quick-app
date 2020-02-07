@@ -1,0 +1,14 @@
+form {
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1em;
+  width: 40%;
+}
+
+input,
+label,
+button {
+  margin: 0.25em;
+}
