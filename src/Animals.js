@@ -12,7 +12,6 @@ class Animals extends Component {
   }
 
   removeAnimal = e => {
-    console.log(e.target.value);
     const toDelete = {
       method: 'DELETE',
       body: JSON.stringify({
@@ -27,6 +26,7 @@ class Animals extends Component {
       `http://localhost:3001/api/v1/animals/${e.target.value}`,
       toDelete
     ).catch(error => console.log(error));
+    this.render();
   };
 
   render() {
